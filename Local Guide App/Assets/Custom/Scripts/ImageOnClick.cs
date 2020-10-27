@@ -1,9 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class OpenRegionPanel : MonoBehaviour {
+public class ImageOnClick : MonoBehaviour, IPointerClickHandler {
+
     public GameObject Panel;
+
+    public void OnPointerClick(PointerEventData eventData) {
+        OpenPanel();
+    }
 
     public void OpenPanel() {
         if (Panel != null) {
