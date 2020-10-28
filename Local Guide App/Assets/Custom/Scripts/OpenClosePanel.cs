@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 public class OpenClosePanel : MonoBehaviour {
-    public GameObject Panel;
-    public Animator animator;
+    private Animator animator;
 
     protected virtual void Awake() {
         animator = GetComponent<Animator>();

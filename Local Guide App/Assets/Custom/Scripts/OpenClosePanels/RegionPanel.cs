@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class RegionPanel : OpenClosePanel {
     public static RegionPanel Instance;
@@ -12,10 +13,14 @@ public class RegionPanel : OpenClosePanel {
         Instance = this;
     }
 
-    public void AddRegion(Region r) {
+    public void Add(Region r) {
         UIRegion newRegion = Instantiate(prefRegion, regionContainer);
-        newRegion.txtTitle.text = r.regionName;
-        newRegion.imgBackground.sprite = r.regionImg;
-        newRegion.region = r;
+        newRegion.Intialize(r);
+    }
+
+    internal void Populate() {
+        foreach (Region r in Initializer.Instance.country.regions) {
+            Add(r);
+        }
     }
 }

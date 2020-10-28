@@ -13,8 +13,6 @@ public class Initializer : MonoBehaviour {
     private void Awake() {
         Instance = this;
 
-        foreach (Region r in country.regions) {
-            regionPanel.AddRegion(r);
-        }
+        regionPanel.Populate();
     }
 }

@@ -12,17 +12,23 @@ public class AttractionPanel : OpenClosePanel {
         Instance = this;
     }
 
-    public void AddAttraction(Region.Attraction a) {
+    public void Add(Region.Attraction a) {
         UIAttraction newAttraction = Instantiate(prefAttraction, attractionContainer);
-        newAttraction.txtTitle.text = a.fullText.name;
-        newAttraction.imgBackground.sprite = a.attractionImg;
-        newAttraction.attraction = a;
+        newAttraction.Initialize(a);
     }
 
-    internal static void PopulateAttractions(Region.Attraction[] attractions) {
-        foreach (var item in collection) {
-
+    public void Populate(Region.Attraction[] attractions) {
+        //Clean out child when you go back
+        for (int i = attractionContainer.childCount - 1; i >= 0; i--) {
+            Destroy(transform.GetChild(i).gameObject);
         }
-        
+
+        Debug.Log("no of attractions " + attractions.Length);
+
+        //Add attractions to list
+        foreach (Region.Attraction a in attractions) {
+            Debug.Log(a.fullText.name);
+            Add(a);
+        }
     }
 }
