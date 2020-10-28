@@ -5,7 +5,6 @@ using UnityEngine;
 public class Region {
     [Serializable]
     public class Attraction {
-        public string attractionName;
         public Sprite attractionImg;
         public Sprite[] carouselImages;
         public TextAsset fullText;

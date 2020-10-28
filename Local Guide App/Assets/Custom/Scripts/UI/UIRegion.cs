@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class UIRegion : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class UIRegion : MonoBehaviour, IPointerClickHandler {
+    public Text txtTitle;
+    public Image imgBackground;
+
+    public Region region;
+
+    public void OnPointerClick(PointerEventData eventData) {
+        AttractionPanel.Instance.Open();
+        AttractionPanel.PopulateAttractions(region.attractions);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

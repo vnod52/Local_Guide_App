@@ -2,25 +2,18 @@
 
 public class OpenClosePanel : MonoBehaviour {
     public GameObject Panel;
+    public Animator animator;
 
-    public void OpenPanel() {
-        if (Panel != null) {
-            Animator animator = Panel.GetComponent<Animator>();
-            Panel.SetActive(true);
-            if (animator != null) {
-                animator.SetBool("open", true);
-                
-            
-            }
-        }
+    protected virtual void Awake() {
+        animator = GetComponent<Animator>();
+    }
+
+    public void Open() {
+        gameObject.SetActive(true);
+        animator.SetBool("open", true);
     }
     
-    public void ClosePanel() {
-        if (Panel != null) {
-            Animator animator = Panel.GetComponent<Animator>();
-            if (animator != null) {
-                animator.SetBool("open", false);
-            }
-        }
+    public void Close() {
+        animator.SetBool("open", false);
     }
 }

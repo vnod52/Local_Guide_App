@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7748079453080580657}
   - component: {fileID: 7748079452591635678}
   - component: {fileID: 7748079452591635677}
-  - component: {fileID: 7748079452591635676}
   - component: {fileID: -2193175904756640752}
   m_Layer: 5
   m_Name: Attraction
@@ -78,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7748079452591635676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748079452591635675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cfc63233f41ac43b7e9184ae43e726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 0}
 --- !u!114 &-2193175904756640752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,8 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5151cdbdef6873f4985bfadae6aa6570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractionName: {fileID: 7748079453870412796}
-  bgImage: {fileID: 7748079452591635677}
+  txtTitle: {fileID: 7748079453870412796}
+  imgBackground: {fileID: 7748079452591635677}
+  attraction:
+    attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    carouselImages: []
+    fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
 --- !u!1 &7748079453870412794
 GameObject:
   m_ObjectHideFlags: 0

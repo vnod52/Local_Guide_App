@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 743771067610705677}
   - component: {fileID: 743771067744716614}
   - component: {fileID: 743771067744716617}
-  - component: {fileID: 743771067744716616}
+  - component: {fileID: 2885291845832406885}
   m_Layer: 5
   m_Name: Region
   m_TagString: Untagged
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &743771067744716616
+--- !u!114 &2885291845832406885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,7 +241,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 743771067744716619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cfc63233f41ac43b7e9184ae43e726, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f99ca49915880840833b5d03218e97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 0}
+  txtTitle: {fileID: 743771067491964862}
+  imgBackground: {fileID: 743771067744716617}
+  region:
+    regionName: 
+    regionImg: {fileID: 0}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
