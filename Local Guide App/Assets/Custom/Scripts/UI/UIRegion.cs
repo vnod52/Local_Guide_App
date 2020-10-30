@@ -10,11 +10,13 @@ public class UIRegion : MonoBehaviour, IPointerClickHandler {
 
     public Region region;
 
+    //Open attraction panel when region is clicked
     public void OnPointerClick(PointerEventData eventData) {
         AttractionPanel.Instance.Open();
         AttractionPanel.Instance.Populate(region.attractions);
     }
 
+    //Give each region a name and bg image
     internal void Intialize(Region r) {
         region = r;
         txtTitle.text = region.regionName;

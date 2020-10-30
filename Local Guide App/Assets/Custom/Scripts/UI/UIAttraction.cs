@@ -13,6 +13,7 @@ public class UIAttraction : MonoBehaviour, IPointerClickHandler {
         // AttractionDetailPanel.Instance.Populate(region.attractions);
     }
 
+    //Give each attraction a name and bg image
     public void Initialize(Region.Attraction a) {
         attraction = a;
         txtTitle.text = attraction.fullText.name;

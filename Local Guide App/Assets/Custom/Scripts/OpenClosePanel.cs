@@ -7,11 +7,13 @@ public class OpenClosePanel : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+    //Open panels 
     public void Open() {
         gameObject.SetActive(true);
         animator.SetBool("open", true);
     }
     
+    //close panels
     public void Close() {
         animator.SetBool("open", false);
     }

@@ -1257,6 +1257,7 @@ GameObject:
   - component: {fileID: 926198202}
   - component: {fileID: 926198201}
   - component: {fileID: 926198200}
+  - component: {fileID: 926198199}
   m_Layer: 5
   m_Name: BtnBack
   m_TagString: Untagged
@@ -1284,6 +1285,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -660}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &926198199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926198197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d5c95ca2cf660428ec9ad3e59402f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1428914093}
 --- !u!114 &926198200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,8 +1341,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OpenClosePanel, Assembly-CSharp
+      - m_Target: {fileID: 926198199}
+        m_TargetAssemblyTypeName: ButtonNavigate, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -2041,6 +2055,7 @@ GameObject:
   - component: {fileID: 1536242039}
   - component: {fileID: 1536242038}
   - component: {fileID: 1536242037}
+  - component: {fileID: 1536242040}
   m_Layer: 5
   m_Name: BtnBack
   m_TagString: Untagged
@@ -2111,8 +2126,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OpenClosePanel, Assembly-CSharp
+      - m_Target: {fileID: 1536242040}
+        m_TargetAssemblyTypeName: ButtonNavigate, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -2161,6 +2176,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536242035}
   m_CullTransparentMesh: 0
+--- !u!114 &1536242040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536242035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d5c95ca2cf660428ec9ad3e59402f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 595273246}
 --- !u!1 &1548561847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2676,7 @@ GameObject:
   - component: {fileID: 1751099617}
   - component: {fileID: 1751099616}
   - component: {fileID: 1751099615}
+  - component: {fileID: 1751099618}
   m_Layer: 5
   m_Name: BtnBack
   m_TagString: Untagged
@@ -2718,9 +2747,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751099613}
-        m_TargetAssemblyTypeName: OpenClosePanel, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1751099618}
+        m_TargetAssemblyTypeName: ButtonNavigate, Assembly-CSharp
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2768,6 +2797,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751099613}
   m_CullTransparentMesh: 0
+--- !u!114 &1751099618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751099613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d5c95ca2cf660428ec9ad3e59402f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1724984669}
 --- !u!1 &1963982010
 GameObject:
   m_ObjectHideFlags: 0
