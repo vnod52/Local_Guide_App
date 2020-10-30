@@ -1,18 +1,14 @@
 ﻿using UnityEngine;
 
-public class OpenClosePanel : MonoBehaviour {
+public class ButtonNavigate : MonoBehaviour {
     public Animator animator;
 
-    protected virtual void Awake() {
-        animator = GetComponent<Animator>();
-    }
-
     public void Open() {
-        gameObject.SetActive(true);
         animator.SetBool("open", true);
     }
-    
+
     public void Close() {
         animator.SetBool("open", false);
     }
+
 }

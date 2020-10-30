@@ -14,7 +14,7 @@ public class AttractionPanel : OpenClosePanel {
 
     public void Add(Region.Attraction a) {
         UIAttraction newAttraction = Instantiate(prefAttraction, attractionContainer);
-        newAttraction.Initialize(a);
+        newAttraction.Initialize(a); 
     }
 
     public void Populate(Region.Attraction[] attractions) {

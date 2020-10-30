@@ -10,7 +10,7 @@ public class UIAttraction : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData eventData) {
         AttractionDetailPanel.Instance.Open();
-       // AttractionDetailPanel.Instance.Populate(region.attractions);
+        // AttractionDetailPanel.Instance.Populate(region.attractions);
     }
 
     public void Initialize(Region.Attraction a) {
