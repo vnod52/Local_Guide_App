@@ -20,9 +20,9 @@ public class AttractionPanel : OpenClosePanel {
 
     public void Populate(Region.Attraction[] attractions) {
         //Clean out child when you go back
-        //for (int i = attractionContainer.childCount - 1; i >= 0; i--) {
-        //    Destroy(transform.GetChild(i).gameObject);
-        //}
+        for (int i = attractionContainer.childCount - 1; i >= 0; i--) {
+            Destroy(attractionContainer.transform.GetChild(i).gameObject);
+        }
 
         Debug.Log("no of attractions " + attractions.Length);
 
