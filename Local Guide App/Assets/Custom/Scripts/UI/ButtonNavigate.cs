@@ -11,6 +11,7 @@ public class ButtonNavigate : MonoBehaviour {
     //Close a panel, run close animation
     public void Close() {
         animator.SetBool("open", false);
+        //Application.OpenURL("https://goo.gl/maps/21rxYePdcZjas74U8");
     }
 
 }
