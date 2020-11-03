@@ -18,7 +18,7 @@ public class RegionPanel : OpenClosePanel {
         newRegion.Intialize(r);
     }
 
-    //Populate region info
+    //Populate region infoz
     internal void Populate() {
         foreach (Region r in Initializer.Instance.country.regions) {
             Add(r);

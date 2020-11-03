@@ -1962,8 +1962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  img: {fileID: 0}
-  txt: {fileID: 0}
+  imgBackground: {fileID: 1013507605}
+  txtFile: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
 --- !u!1 &1478118371
 GameObject:
   m_ObjectHideFlags: 0
