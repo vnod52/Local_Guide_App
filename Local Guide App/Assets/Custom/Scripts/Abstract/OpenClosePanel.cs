@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-public class OpenClosePanel : MonoBehaviour {
-    public Animator animator;
+public abstract class OpenClosePanel : MonoBehaviour {
+    protected Animator animator;
 
     protected virtual void Awake() {
         animator = GetComponent<Animator>();
@@ -9,7 +9,6 @@ public class OpenClosePanel : MonoBehaviour {
 
     //Open panels 
     public void Open() {
-        gameObject.SetActive(true);
         animator.SetBool("open", true);
     }
     

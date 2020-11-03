@@ -878,7 +878,6 @@ GameObject:
   - component: {fileID: 595273244}
   - component: {fileID: 595273246}
   - component: {fileID: 595273247}
-  - component: {fileID: 595273248}
   m_Layer: 5
   m_Name: PnlAttractionList
   m_TagString: Untagged
@@ -905,7 +904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1200, y: 0}
+  m_AnchoredPosition: {x: -2350, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595273244
@@ -956,7 +955,7 @@ Animator:
   m_GameObject: {fileID: 595273242}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 79665ebbdd59a524c9f16b9fd83fa1fc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8da53ca08939d4c46b4e857fe144f417, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -977,23 +976,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ce85ad30868bf4590980e79da72702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   prefAttraction: {fileID: -2193175904756640752, guid: 312542bcc55f4104484c9e9b1695b1ef,
     type: 3}
   attractionContainer: {fileID: 1732941900}
---- !u!114 &595273248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595273242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da0f080391d51de4595ebd8a1a12038a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!1 &772135539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,7 +1883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3523, y: 11}
+  m_AnchoredPosition: {x: -3500, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1428914093
@@ -1911,7 +1896,7 @@ Animator:
   m_GameObject: {fileID: 1428914091}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0fb9ed9ad9389b64d898d9f9255d9427, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8da53ca08939d4c46b4e857fe144f417, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1970,7 +1955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ea32d181311aa409c995e4e713b234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   imgBackground: {fileID: 1013507605}
   txtAttractionTitle: {fileID: 81034059}
   txtAttractionDescription: {fileID: 253297242}
@@ -2498,7 +2482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2337, y: 0}
+  m_AnchoredPosition: {x: -1200, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724984667
@@ -2570,7 +2554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9546c5d8ec79344aa5b6a33bb3f9bd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   prefRegion: {fileID: 2885291845832406885, guid: 8b8f01057873b7948998bf497eb255f2,
     type: 3}
   regionContainer: {fileID: 2037684933}

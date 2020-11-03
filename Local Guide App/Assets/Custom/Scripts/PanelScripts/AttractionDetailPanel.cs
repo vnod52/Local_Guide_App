@@ -19,8 +19,5 @@ public class AttractionDetailPanel : OpenClosePanel {
         imgBackground.sprite = attraction.attractionImg;
         txtAttractionTitle.text = attraction.fullText.name;
         txtAttractionDescription.text = attraction.fullText.text;
-        Debug.Log(transform.Find("DescriptionTitle").GetComponent<Text>());
-        GameObject.Find("Description");
-
     }
 }
