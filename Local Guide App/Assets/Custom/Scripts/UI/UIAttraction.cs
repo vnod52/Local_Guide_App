@@ -8,6 +8,7 @@ public class UIAttraction : MonoBehaviour, IPointerClickHandler {
 
     public Region.Attraction attraction;
 
+    //Open attraction detail panel and populate info based on attraction selected
     public void OnPointerClick(PointerEventData eventData) {
         AttractionDetailPanel.Instance.Open();
         AttractionDetailPanel.Instance.Populate(attraction);

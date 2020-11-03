@@ -2,6 +2,7 @@
 using UnityEngine;
 
 public class RegionPanel : OpenClosePanel {
+    //Create instance of the region panel
     public static RegionPanel Instance;
     
     public UIRegion prefRegion;
@@ -18,7 +19,7 @@ public class RegionPanel : OpenClosePanel {
         newRegion.Intialize(r);
     }
 
-    //Populate region infoz
+    //Populate region info
     internal void Populate() {
         foreach (Region r in Initializer.Instance.country.regions) {
             Add(r);

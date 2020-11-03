@@ -13,22 +13,60 @@ MonoBehaviour:
   m_Name: New Zealand
   m_EditorClassIdentifier: 
   regions:
-  - regionName: aaa
-    regionImg: {fileID: 21300000, guid: 9910d4e5a4ee54c47a74f5405fa1617c, type: 3}
+  - regionName: Northland
+    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 4326ac2f68bef1543b44d131c06306ce, type: 3}
+      carouselImages:
+      - {fileID: 21300000, guid: 4326ac2f68bef1543b44d131c06306ce, type: 3}
+      - {fileID: 21300000, guid: 4905e846cca7c6d49af65a9d0b91e699, type: 3}
+      fullText: {fileID: 4900000, guid: 3c6ee06cc767dec48b3fb3f47e264e1c, type: 3}
+    - attractionImg: {fileID: 21300000, guid: 4905e846cca7c6d49af65a9d0b91e699, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Auckland
+    regionImg: {fileID: 21300000, guid: 4905e846cca7c6d49af65a9d0b91e699, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
-    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
-      carouselImages: []
-      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
-  - regionName: bbb
+  - regionName: Waikato
     regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
-  - regionName: ccc
+  - regionName: Bay of Plenty
+    regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Gisbourne
+    regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Hawkes Bay
+    regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Taranaki
+    regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Manawatu-Whanganui
+    regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+    attractions:
+    - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
+      carouselImages: []
+      fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  - regionName: Wellington
     regionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}

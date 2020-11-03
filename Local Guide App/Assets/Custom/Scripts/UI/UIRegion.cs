@@ -10,7 +10,7 @@ public class UIRegion : MonoBehaviour, IPointerClickHandler {
 
     public Region region;
 
-    //Open attraction panel when region is clicked
+    //Open attraction panel and populate attractions based on region selected
     public void OnPointerClick(PointerEventData eventData) {
         AttractionPanel.Instance.Open();
         AttractionPanel.Instance.Populate(region.attractions);

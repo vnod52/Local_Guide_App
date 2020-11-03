@@ -1,7 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AttractionPanel : OpenClosePanel {
+    //Create instance of attraction panel
     public static AttractionPanel Instance;
     
     public UIAttraction prefAttraction;
@@ -24,11 +24,8 @@ public class AttractionPanel : OpenClosePanel {
             Destroy(attractionContainer.transform.GetChild(i).gameObject);
         }
 
-        Debug.Log("no of attractions " + attractions.Length);
-
         //Add attractions to list
         foreach (Region.Attraction a in attractions) {
-            Debug.Log(a.fullText.name);
             Add(a);
         }
     }

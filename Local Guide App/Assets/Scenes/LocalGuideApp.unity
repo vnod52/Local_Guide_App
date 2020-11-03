@@ -748,6 +748,7 @@ GameObject:
   - component: {fileID: 521349984}
   - component: {fileID: 521349983}
   - component: {fileID: 521349982}
+  - component: {fileID: 521349986}
   m_Layer: 5
   m_Name: ScrollArea
   m_TagString: Untagged
@@ -856,6 +857,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521349980}
   m_CullTransparentMesh: 0
+--- !u!114 &521349986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521349980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf05c6bacd65d04ab0b40739b665120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &595273242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1976,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   imgBackground: {fileID: 1013507605}
-  txtFile: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
+  txtAttractionTitle: {fileID: 81034059}
+  txtAttractionDescription: {fileID: 253297242}
 --- !u!1 &1478118371
 GameObject:
   m_ObjectHideFlags: 0
