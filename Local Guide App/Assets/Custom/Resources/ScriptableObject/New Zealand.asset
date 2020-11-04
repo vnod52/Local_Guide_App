@@ -43,31 +43,31 @@ MonoBehaviour:
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
   - regionName: Gisbourne
-    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    regionImg: {fileID: 21300000, guid: 442b3bdd15708b442857af2db87420b8, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
   - regionName: Hawkes Bay
-    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    regionImg: {fileID: 21300000, guid: 741adf56899eca34b9140bbae243b0f3, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
   - regionName: Taranaki
-    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    regionImg: {fileID: 21300000, guid: 918a7aabbbdb7a7498f4551202608b40, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
   - regionName: Manawatu-Whanganui
-    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    regionImg: {fileID: 21300000, guid: 5625cc71b61f4404095861a3b7fef897, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
       fullText: {fileID: 4900000, guid: b90f5e35b48eb544999c9757995449d9, type: 3}
   - regionName: Wellington
-    regionImg: {fileID: 21300000, guid: 162d5ce8d2bea3b44aee7fc687aed8d8, type: 3}
+    regionImg: {fileID: 21300000, guid: 6fc1e304827698a47a716cbb00147fe3, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       carouselImages: []
