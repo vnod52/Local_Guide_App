@@ -11,7 +11,15 @@ public class ButtonNavigate : MonoBehaviour {
     //Close a panel, run close animation
     public void Close() {
         animator.SetBool("open", false);
-        //Application.OpenURL("https://goo.gl/maps/21rxYePdcZjas74U8");
     }
 
+    //Open attraction addresss in google maps
+    public void OpenMaps() {
+        Application.OpenURL(AttractionDetailPanel.Instance.txtAddress);
+    }  
+    
+    //Share attraction to friends
+    public void Share() {
+        //Application.OpenURL("https://goo.gl/maps/7WX6xbmtQMX7kox27");
+    }
 }

@@ -5,10 +5,11 @@ using UnityEngine;
 public class Region {
     [Serializable]
     public class Attraction {
-        //Every attraction has an image array, attraction name and description(in text file)
+        //Every attraction has an image array, attraction name, address and description(in text file)
         public Sprite attractionImg;
         public Sprite[] carouselImages;
         public TextAsset fullText;
+        public string address;
     }
 
     //Every region has an array of attraction

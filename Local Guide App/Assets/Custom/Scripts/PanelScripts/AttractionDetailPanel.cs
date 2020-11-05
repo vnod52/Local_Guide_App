@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 
 public class AttractionDetailPanel : OpenClosePanel {
     //Create instance of attraction detail panel
@@ -8,6 +7,7 @@ public class AttractionDetailPanel : OpenClosePanel {
     public Image imgBackground;
     public Text txtAttractionTitle;
     public Text txtAttractionDescription;
+    public string txtAddress;
    
     protected override void Awake() {
         base.Awake();
@@ -19,5 +19,6 @@ public class AttractionDetailPanel : OpenClosePanel {
         imgBackground.sprite = attraction.attractionImg;
         txtAttractionTitle.text = attraction.fullText.name;
         txtAttractionDescription.text = attraction.fullText.text;
+        txtAddress = attraction.address;
     }
 }
