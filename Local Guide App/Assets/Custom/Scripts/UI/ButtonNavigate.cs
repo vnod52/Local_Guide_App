@@ -17,6 +17,11 @@ public class ButtonNavigate : MonoBehaviour {
         animator.SetBool("open", false);
     }
 
+    //Close the application
+    public void ExitApp() {
+        Application.Quit();
+    }
+
     //Open attraction addresss in google maps
     public void OpenMaps() {
         Application.OpenURL(AttractionDetailPanel.Instance.txtAddress);

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Initializer : MonoBehaviour {
     public static Initializer Instance;
@@ -9,6 +10,7 @@ public class Initializer : MonoBehaviour {
     public Country country;
     public RectTransform rtAttraction;
     public RectTransform rtAttractionDesc;
+
      
     private void Awake() {
         Instance = this;
@@ -16,3 +18,4 @@ public class Initializer : MonoBehaviour {
         regionPanel.Populate();
     }
 }
+

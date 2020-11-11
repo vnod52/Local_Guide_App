@@ -18,8 +18,9 @@ MonoBehaviour:
     attractions:
     - attractionImg: {fileID: 21300000, guid: d7049ae6a15309c4fb208b2ccf99c688, type: 3}
       carouselImages:
-      - {fileID: 21300000, guid: 4326ac2f68bef1543b44d131c06306ce, type: 3}
-      - {fileID: 21300000, guid: 4905e846cca7c6d49af65a9d0b91e699, type: 3}
+      - {fileID: 21300000, guid: 0c36594291d5b8a448ad99b016dc8e07, type: 3}
+      - {fileID: 21300000, guid: 6adefb64fc8422d4fbd0530c95126a94, type: 3}
+      - {fileID: 21300000, guid: d0eb8c390d494b544ac25ba304c922ca, type: 3}
       fullText: {fileID: 4900000, guid: 96a77ebc9a1ae4841ad8259dfed707db, type: 3}
       address: https://goo.gl/maps/P4sKqxcGdacYXyhg7
     - attractionImg: {fileID: 21300000, guid: 4c0eda789301f7f47a05b6e72c112402, type: 3}
@@ -38,7 +39,8 @@ MonoBehaviour:
     regionImg: {fileID: 21300000, guid: c40a9ebedff306a4c8d254f8a00e71d0, type: 3}
     attractions:
     - attractionImg: {fileID: 21300000, guid: 344bb281a57a8b94fb0c59d83def40c0, type: 3}
-      carouselImages: []
+      carouselImages:
+      - {fileID: 21300000, guid: 8056c8c1c50af0a44a77bbbf65cb4fa7, type: 3}
       fullText: {fileID: 4900000, guid: 7ce630e3a8ee43a4780882c6aab6781e, type: 3}
       address: https://goo.gl/maps/x7yKywX9kBP3PvMy6
     - attractionImg: {fileID: 21300000, guid: e23f114264c26fa40af64698be0526fe, type: 3}
