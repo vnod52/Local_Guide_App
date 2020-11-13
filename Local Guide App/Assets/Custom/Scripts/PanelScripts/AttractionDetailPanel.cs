@@ -30,14 +30,12 @@ public class AttractionDetailPanel : OpenClosePanel {
 
     //Load next attraction image on button click
     public void NextImage() {
-        Debug.Log(arrayIndex);
         arrayIndex = (arrayIndex < attractionData.carouselImages.Length - 1) ? arrayIndex + 1 : 0;
         imgBackground.sprite = attractionData.carouselImages[arrayIndex];
     }
 
     //Load previous attraction image on button click
     public void PreviousImage() {
-        Debug.Log(arrayIndex);
         arrayIndex = (arrayIndex > 0) ?  arrayIndex - 1 : attractionData.carouselImages.Length - 1;
         imgBackground.sprite = attractionData.carouselImages[arrayIndex];
     }
