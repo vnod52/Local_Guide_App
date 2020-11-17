@@ -17,6 +17,16 @@ public class ButtonNavigate : MonoBehaviour {
         animator.SetBool("open", false);
     }
 
+    //Open a AppInfoPnl, run open animation
+    public void OpenAppInfo() {
+        animator.SetBool("open", true);
+    }
+
+    //Close a AppInfoPnl, run close animation
+    public void CloseAppInfo() {
+        animator.SetBool("open", false);
+    }
+
     //Close the application
     public void ExitApp() {
         Application.Quit();

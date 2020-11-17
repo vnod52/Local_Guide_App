@@ -61,9 +61,10 @@ public class AttractionDetailPanel : OpenClosePanel {
 
         //Create required prefabs
         for (int i = 0; i < gallerySize; i++) {
-            Instantiate(prefImgPos, imgPosContainer.transform);
-            imgPosContainer.transform.GetChild(0).GetComponentInChildren<Image>().sprite = fill;
+            Image img = Instantiate(prefImgPos, imgPosContainer.transform);
+            if (i == 0) img.sprite = fill;
         }
+        Debug.Log("aaa");
     }
 
     //Show image position as your scroll back and forth in image carousel 
