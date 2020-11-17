@@ -52,4 +52,5 @@ public class ButtonNavigate : MonoBehaviour {
             .SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
             .Share();
     }
+
 }
