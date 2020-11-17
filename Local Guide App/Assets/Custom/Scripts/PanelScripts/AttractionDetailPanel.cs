@@ -11,6 +11,8 @@ public class AttractionDetailPanel : OpenClosePanel {
     public string txtAddress;
     public GameObject imgPosContainer;
     public Image prefImgPos;
+    public Sprite fill;
+    public Sprite noFill;
 
     private Region.Attraction attractionData;
     private int arrayIndex = 0;
@@ -28,42 +30,28 @@ public class AttractionDetailPanel : OpenClosePanel {
         arrayIndex = 0;
         imgBackground.sprite = attraction.carouselImages[arrayIndex];
         attractionData = attraction;
-        ImagePosition();
+        CreateImgPosPref();
+
     }
 
     //Load next attraction image on button click
     public void NextImage() {
         arrayIndex = (arrayIndex < attractionData.carouselImages.Length - 1) ? arrayIndex + 1 : 0;
         imgBackground.sprite = attractionData.carouselImages[arrayIndex];
-        Debug.Log("Index: " + arrayIndex);
 
-        for (int i = 0; i < attractionData.carouselImages.Length; i++) {
-            if (arrayIndex == i) {
-                imgPosContainer.transform.GetChild(arrayIndex).GetComponentInChildren<Image>().color = new Color(225.0F, 200.0F, 0.0F);
-            } else {
-                imgPosContainer.transform.GetChild(i).GetComponentInChildren<Image>().color = new Color(225.0F, 125.0F, 100.0F);
-            }
-        }
+        ShowImgPos();
     }
 
     //Load previous attraction image on button click
     public void PreviousImage() {
         arrayIndex = (arrayIndex > 0) ?  arrayIndex - 1 : attractionData.carouselImages.Length - 1;
         imgBackground.sprite = attractionData.carouselImages[arrayIndex];
-        Debug.Log("Index: " + arrayIndex);
 
-        for (int i = 0; i < attractionData.carouselImages.Length; i++) {
-            if (arrayIndex == i) {
-                imgPosContainer.transform.GetChild(arrayIndex).GetComponentInChildren<Image>().color = new Color(225.0F, 200.0F, 0.0F);
-            } else {
-                imgPosContainer.transform.GetChild(i).GetComponentInChildren<Image>().color = new Color(225.0F, 125.0F, 100.0F);
-            }
-        }
-
+        ShowImgPos();
     }
 
     //Create correct amount of images as per carousel array size
-    public void ImagePosition() {
+    public void CreateImgPosPref() {
         int gallerySize = attractionData.carouselImages.Length;
 
         //Clean out child when you go back
@@ -74,6 +62,19 @@ public class AttractionDetailPanel : OpenClosePanel {
         //Create required prefabs
         for (int i = 0; i < gallerySize; i++) {
             Instantiate(prefImgPos, imgPosContainer.transform);
+            imgPosContainer.transform.GetChild(0).GetComponentInChildren<Image>().sprite = fill;
+        }
+    }
+
+    //Show image position as your scroll back and forth in image carousel 
+    public void ShowImgPos() {
+        //Show image postion as you move back
+        for (int i = 0; i < attractionData.carouselImages.Length; i++) {
+            if (arrayIndex == i) {
+                imgPosContainer.transform.GetChild(arrayIndex).GetComponentInChildren<Image>().sprite = fill;
+            } else {
+                imgPosContainer.transform.GetChild(i).GetComponentInChildren<Image>().sprite = noFill;
+            }
         }
     }
 }
